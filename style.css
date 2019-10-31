@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+html,
+body {
+	font-family: Lato;
+
+	position: relative;
+	height: 100vh;
+	font-size: 10px;
+}
+.bg-img {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(back.jpg);
+	background-size: cover;
+	background-position: center;
+	border: none;
+	height: 100vh;
+	filter: blur(1rem);
+}
+.container {
+	width: 100rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	box-shadow: 0px 1rem 6rem rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+.player-1-panel,
+.player-2-panel {
+	width: 50%;
+	float: left;
+	height: 60rem;
+	padding: 10rem;
+	background-color: #eeddc3;
+}
+
+/* Players */
+
+.player-name {
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: 100;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.player-score {
+	font-size: 8rem;
+	color: #d15918;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 13rem;
+}
+
+.active {
+	background-color: #f0d4aa;
+}
+.active .player-name,
+.active .player-score {
+	font-weight: 300;
+}
+
+.active .player-name::after {
+	content: '\2022';
+	position: absolute;
+	font-size: 6rem;
+	margin-top: -1.5rem;
+	margin-left: 1rem;
+	color: #d15918;
+}
+
+/* current */
+
+.current-box {
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+	padding: 1.5rem;
+	background-color: #692b0a;
+}
+
+.current-label {
+	color: #dbd7cc;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+
+.current-score {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 3rem;
+	margin-top: 1rem;
+}
+
+/* ======================button=========================== */
+button {
+	font-size: 2rem;
+	padding: 1rem;
+	text-decoration: none;
+	outline: none;
+	text-transform: uppercase;
+	border: none;
+	width: 20rem;
+	font-family: Lato;
+	background: none;
+	font-weight: 300;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+
+button:hover {
+	font-weight: 400;
+}
+button:hover i {
+	margin-right: 1.5rem;
+}
+
+i {
+	display: inline-block;
+	color: #d15918;
+	font-size: 3.2rem;
+	margin-right: 1rem;
+	vertical-align: text-top;
+	line-height: 1;
+	margin-top: -0.2rem;
+	transition: all 0.2s;
+}
+
+.btn-new {
+	top: 10%;
+}
+.btn-roll {
+	top: 65%;
+}
+.btn-hold {
+	top: 75%;
+}
+
+.dice {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 10rem;
+}
