@@ -82,6 +82,14 @@ body {
 	color: #d15918;
 }
 
+.winner {
+	background-color: yellow;
+}
+.winner .player-name {
+	font-weight: 700;
+	color: orange;
+}
+
 /* current */
 
 .current-box {
@@ -158,4 +166,7 @@ i {
 	left: 50%;
 	transform: translateX(-50%);
 	height: 10rem;
+	box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
+	border-radius: 1rem;
+	transition: all 2s;
 }
