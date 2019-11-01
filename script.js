@@ -16,6 +16,7 @@ init();
 document.getElementById('input').addEventListener('click', function() {
 	inputVal = document.getElementById('win-score').value;
 	document.querySelector('.target').textContent = '' + inputVal;
+	gamePlaying = true;
 });
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
@@ -93,7 +94,7 @@ function init() {
 	scores = [ 0, 0 ];
 	activePlayer = 1;
 	roundScore = 0;
-	gamePlaying = true;
+	gamePlaying = false;
 	prevRoll = 0;
 	inputVal = undefined;
 	document.getElementById('name-1').textContent = 'Player-1';
@@ -110,6 +111,7 @@ function init() {
 	document.querySelector('.player-1-panel').classList.remove('winner');
 	document.querySelector('.player-2-panel').classList.remove('winner');
 	document.getElementById('win-score').value = 'unset';
+	document.querySelector('.target').textContent = '';
 }
 // document.querySelector('#current-' + activePlayer).textContent = dice;
 // document.querySelector('#current-' + activePlayer).innerHTML = '<s>' + dice + '</s>';
