@@ -166,7 +166,7 @@ body {
 }
 
 .input-box button:active {
-	box-shadow: 0 0.1rem 0.3rem #fff;
+	box-shadow: 0 0.1rem 0.3rem #d15918;
 	transform: translate(20%, 0);
 }
 
