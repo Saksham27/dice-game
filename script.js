@@ -17,6 +17,7 @@ document.getElementById('input').addEventListener('click', function() {
 	inputVal = document.getElementById('win-score').value;
 	document.querySelector('.target').textContent = '' + inputVal;
 	gamePlaying = true;
+	document.getElementById('input').disabled = true;
 });
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
@@ -113,6 +114,7 @@ function init() {
 	document.querySelector('.player-2-panel').classList.remove('winner');
 	document.getElementById('win-score').value = 'unset';
 	document.querySelector('.target').textContent = '';
+	document.getElementById('input').disabled = false;
 }
 // document.querySelector('#current-' + activePlayer).textContent = dice;
 // document.querySelector('#current-' + activePlayer).innerHTML = '<s>' + dice + '</s>';
