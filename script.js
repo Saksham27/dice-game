@@ -80,6 +80,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 
 document.querySelector('.btn-new').addEventListener('click', init);
 
+// Other player chance
 function nextPlayer() {
 	activePlayer === 1 ? (activePlayer = 2) : (activePlayer = 1);
 	roundScore = 0;
